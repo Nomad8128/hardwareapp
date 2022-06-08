@@ -18,8 +18,8 @@ create table if not exists hardware_review (
                                                id identity,
                                                hardware_id bigint,
                                                review_id bigint,
-                                               constraint fk_hardware foreign key (hardware_id) references hardware(id),
-                                               constraint fk_review foreign key (review_id) references review(id)
+                                               constraint fk_hardware foreign key (hardware_id) references hardware(id) on delete cascade,
+                                               constraint fk_review foreign key (review_id) references review(id) on delete cascade
 );
 create table if not exists user (
                                     id identity,

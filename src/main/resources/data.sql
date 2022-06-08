@@ -12,7 +12,7 @@ values ('Ryzen 3600X', '2372495377', 2500, 'CPU', 3);
 insert into review (title, text, score)
 values ('I like it', 'Works as advertised! No problems!', 5);
 insert into review (title, text, score)
-values ('Broken piece of shit', 'Absolute fucking garbage, I want my money back', 1);
+values ('Broken', 'I want my money back', 1);
 
 insert into HARDWARE_REVIEW (hardware_id, review_id)
 values (1, 1);
